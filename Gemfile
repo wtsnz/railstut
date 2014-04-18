@@ -16,6 +16,7 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Test Suite
 gem 'rspec-rails', '~> 2.14.2'
+gem 'capybara', '~> 2.2.1'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
