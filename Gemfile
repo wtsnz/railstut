@@ -18,6 +18,8 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'rspec-rails', '~> 2.14.2'
 gem 'capybara', '~> 2.2.1'
 
+gem 'bcrypt-ruby', '~> 3.1.5'
+
 gem 'bootstrap-sass', '~> 3.1.1.0'
 
 # Use jquery as the JavaScript library
