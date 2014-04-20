@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy] # restricts sessions resource to these three methods
 
+  resources :projects
+
   root :to => 'static_pages#home'
 
 

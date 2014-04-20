@@ -2,13 +2,14 @@
 	<ul class="nav nav-pills pull-right">
 		<li class="<%= 'active' if current_page?(root_path) %>"><%= link_to "Home",    root_path %></li>
 		<li class="<%= 'active' if current_page?(about_path) %>"><%= link_to "About",    about_path %></li>
-	    <li class="<%= 'active' if current_page?(help_path) %>"><%= link_to "Help",    help_path %></li>
-	    <% if signed_in? %>
-	    	<li class="<%= 'active' if current_page?(current_user) %>"><%= link_to "Profile", current_user %></li>
-	    	<li class="<%= 'active' if current_page?(signout_path) %>"><%= link_to "Sign out", signout_path, method: "delete" %></li>
-	    <% else %>
-	    	<li class="<%= 'active' if current_page?(signin_path) %>"><%= link_to "Sign in", signin_path %></li>
-	    <% end %>
+		
+		<% if signed_in? %>
+			<li class="<%= 'active' if current_page?(projects_path) %>"><%= link_to "Projects",    projects_path %></li>
+			<li class="<%= 'active' if current_page?(current_user) %>"><%= link_to "Profile", current_user %></li>
+			<li class="<%= 'active' if current_page?(signout_path) %>"><%= link_to "Sign out", signout_path, method: "delete" %></li>
+		<% else %>
+			<li class="<%= 'active' if current_page?(signin_path) %>"><%= link_to "Sign in", signin_path %></li>
+		<% end %>
 	</ul>
-	<h3 class="text-muted">Super Secret Rails Project</h3>
+	<h3 class="text-muted">Carson</h3>
 </div>

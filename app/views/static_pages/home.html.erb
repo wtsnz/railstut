@@ -1,7 +1,36 @@
 <div class="jumbotron">
-  <h1>Super Secret Rails Project</h1>
+	<h1>Say Hello to Carson</h1>
 
-  <p class="lead">This is the home of the super secret rails project. Sign up to begin.</p>
+	<p class="lead">Carson is here to help you automatically build, archive and deploy your apps.</p>
+	
+	<% if !signed_in? %>
+		<%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+	<% end %>
 
-  <%= link_to "Sign up now!", signup_path, class: "btn btn-lg btn-primary" %>
+
+
 </div>
+
+<% if signed_in? %>
+	<div class="row">
+		<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Name</th>
+				<th>Last build</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Fish4All</td>
+				<td>30 seconds ago</td>
+			</tr>
+		</tbody>
+
+
+
+		</table>
+	</div>
+<% end %>

@@ -1,5 +1,8 @@
 class User < ActiveRecord::Base
 
+	# Relationships
+	has_many :projects
+
 	# Hooks
 
 	before_save { self.email = email.downcase }

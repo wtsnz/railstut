@@ -1,0 +1,25 @@
+<% provide(:title, 'Projects') %>
+
+<h1>Projects <%= link_to '<button type="button" class="btn btn-primary">Create Project</button>'.html_safe, new_project_path %> </h1>
+
+<div class="row">
+	<div class="col-md-12">
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th>#</th>
+					<th>Name</th>
+					<th>Last build</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>1</td>
+					<td>Fish4All</td>
+					<td>30 seconds ago</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+

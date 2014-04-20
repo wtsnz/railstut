@@ -8,7 +8,7 @@ describe "Static Pages" do
 
 		before { visit root_path }
 
-		it { should have_content('Super Secret Rails Project') }
+		it { should have_content('Say Hello to Carson') }
 		it { should have_title(full_title('')) }
 
 	end
